@@ -1,0 +1,435 @@
+*{ box-sizing: border-box;}
+html, body{ 
+    width: 100%;
+    overflow-x: hidden;
+    height: 100%;
+    background: rgb(130, 130, 130);
+}
+
+p{ font-family: Arial, Helvetica, sans-serif}
+
+h1{
+    margin: 0 auto;
+}
+
+.menubar{
+    position: relative;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: 1vw;
+    width: 98vw;
+    height: 4vw;
+    padding: 1.2vw;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10vw;
+    background: lavenderblush;
+}
+
+.menu{
+    position: relative;
+    /* display: flex; */
+    display: none;
+}
+
+.list_container{
+    position: relative;
+    display: flex;
+}
+
+.li-list{
+    position: relative;
+    display: flex;
+    gap: 1vw;
+    margin: 0 1vw;
+}
+
+.li-list > li > a{
+    text-decoration: none;
+    font-size: 1.5vw;
+    color: cornflowerblue;
+}
+
+form{
+    width: 40vw;
+    margin: 1vw auto;
+}
+
+input[type="text"], input[type="date"], input[type="email"], input[type="number"], select{
+    padding: 0.5vw 1vw;
+    margin: 0.4vw auto;
+    font-size: 1vw;
+    color: grey;
+    border-radius: 0.2 vw;
+    border: none;
+}
+
+button{
+    font-size: 1.2vw;
+    line-height: 1.4vw;
+    font-weight: 600;
+    background: navy;
+    color: aliceblue;
+    cursor: pointer;
+    padding: 0.2vw;
+    text-align: center;
+    border: none;
+    border-radius: 2vw;
+}
+
+button:hover{
+    background: rgb(83, 83, 248);
+    transition: all 0.2s linear;
+}
+
+button > a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1vw;
+}
+
+form > p, form > h3{
+    font-size: 1.2vw;
+    color: rgb(78, 78, 78);
+    margin-top: 0.6vw;
+}
+
+h4{
+    font-size: 30vw;;
+}
+h5{
+    font-size: 5vw;
+}
+
+h4, h5{
+    margin: 5vw auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body_class{
+    background: rgb(255, 0, 0);
+}
+
+.texic{
+    font-size: 0.8vw;
+    margin-top: 0.2vw;
+}
+
+.flexim{
+    display: flex;
+}
+
+.banner{
+    position: relative;
+    background: black;
+    width: 100vw;
+    height: 20vw;
+    margin-top: 1vw;
+    color: azure;
+    text-align: center;
+    line-height: 20vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5vw;
+    overflow: hidden;
+}
+
+.color-block{
+    position: absolute;
+    width: 100vw;
+    height: 20vw;
+}
+
+.circle{
+    position: absolute;
+    width: 9vw;
+    height: 9vw;
+    border-radius: 100vw;
+    filter: blur(80px);
+}
+
+.c0{
+    background: pink;
+    animation: pinky 8s linear infinite;
+}
+
+.c1{
+    background: red;
+    animation: redy 12s linear infinite;
+}
+
+.c2{
+    background: rgb(202, 124, 29);
+    animation: orang 11s linear infinite;
+}
+
+.c3{
+    background: rgb(95, 47, 219);
+    animation: viol 10s linear infinite;
+}
+
+@keyframes pinky{
+    0%{ top: 10%; left: 80%;}
+    50%{ top: 60%; left: 20%;}
+    100%{ top: 10%; left: 80%;}
+}
+
+@keyframes redy{
+    0%{ top: 60%; left: 20%;}
+    50%{ top: 10%; left: 80%;}
+    100%{ top: 60%; left: 20%;}
+}
+
+@keyframes orang{
+    0%{ top: 0%; left: 60%;}
+    50%{ top: 90%; left: 0%;}
+    100%{ top: 00%; left: 60%;}
+}
+
+@keyframes viol{
+    0%{ top: 70%; left: 60%;}
+    50%{ top: 20%; left: 40%;}
+    100%{ top: 70%; left: 60%;}
+}
+table{
+    margin-top: 1vw;
+    overflow: hidden;
+}
+
+table, .new_row{
+    width: 94%;
+    position: relative;
+    margin-left: 3%;
+    border-collapse: collapse;
+    font-size: 1vw;
+    background: whitesmoke;
+    border-radius: 0.7vw;
+}
+
+th, td{
+    border: 1px solid black;
+    text-align: left;
+    font-weight: 400;
+    padding: 0.5vw;
+}
+
+th{
+    color: #999;
+}
+
+th:hover{
+    background: #eee;
+    cursor: pointer;
+}
+
+td > span{
+    display: inline-block;
+    border-radius: 4px;
+    padding: 2px 8px;
+    margin: 0 4px 4px 0;
+}
+
+.sp_red{
+    background: rgb(255, 47, 200);
+}
+
+.sp_green{
+    background: greenyellow;
+}
+
+.avocado_button{
+    color: black;
+    width: 6vw;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+}
+
+.avocado_button:hover{
+    background: rgb(255, 0, 0);
+    color: #000;
+}
+
+input[type='text']{
+    width: 10vw;
+    outline: none;
+}
+
+input[type='text']:focus{
+    border: none;
+    outline: none;
+}
+
+input[type='name_of']{
+    width: 28vw;
+}
+
+input[type='date']{
+    width: 18vw;
+    outline: none;
+}
+
+select[name='type']{
+    width: 16vw;
+}
+
+.logo, .basket{
+    width: 5vw;
+    height: 3vw;
+    margin-top: -0.7vw;
+}
+
+.cart{
+    font-size: 1.5vw;
+}
+
+.t-shirt, .jeans{
+    padding-top: 1vw;
+    position: relative;
+    width: 100%;
+    height: 28vw;
+}
+
+.product-card{
+    justify-content: center;
+    justify-items: center;
+    background: #ddcbcb;
+    border-radius: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    width: 23vw;
+    border: 1px solid #ddd;
+    margin: 1vw;
+    padding: 1vw;
+}
+
+.flexcard{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.add-to-cart{
+    margin: 0 auto;
+}
+
+#cart-sidebar{
+    position: fixed;
+    top: 0vw;
+    right: -35vw;
+    width: 30vw;
+    height: 90vw;
+    background-color: #ddd;
+    box-shadow: -2px o 5px #dddddd21;
+    padding: 1vw;
+    transition: right 0.3s ease-in-out;
+    overflow-y: auto;
+}
+
+#cart-sidebar.show{
+    right: 0;
+}
+
+#close-cart{
+    background: red;
+    color: #ddd;
+    border: none;
+    cursor: pointer;
+}
+
+#close-cart:hover{
+    background: brown;
+}
+#cart-count{
+    font-size: 1vw;
+    position: absolute;
+    margin-left: -1vw;
+    margin-top: 1vw;
+}
+
+
+#cart-items > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+
+  padding: 12px;
+  margin-bottom: 12px;
+
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  background: #fff;
+}
+
+#cart-items img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* название товара */
+#cart-items strong {
+  flex: 1;
+  font-size: 14px;
+}
+
+/* блок управления количеством */
+.cart-controls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  background: #f5f5f5;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+/* кнопки + - */
+.cart-controls button {
+  width: 28px;
+  height: 28px;
+
+  border: none;
+  border-radius: 6px;
+  background: #ddd;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cart-controls button:hover {
+  background: #ccc;
+}
+
+/* input количества */
+.cart-controls input {
+  width: 32px;
+  text-align: center;
+  border: none;
+  background: transparent;
+}
+
+/* кнопка удалить */
+#cart-items .remove {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+#cart-items .remove:hover {
+  background: #e60000;
+}
+
+/* общий контейнер корзины */
+#cart-items > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

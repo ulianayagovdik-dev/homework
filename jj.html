@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nova Atelier</title>
+    <meta name="description" content="Одностраничный сайт с плавным скроллом"  />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.16/dist/lenis.min.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+
+  <body class="js">
+    <div class="page-noise" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Nova Atelier home">
+        <span class="brand-dot"></span>
+        <span>Nova Atelier</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Основная навигация">
+        <a href="#showcase">Проекты</a>
+        <a href="#services">Подход</a>
+        <a href="#contact">Контакт</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow" data-reveal>Digital direction / 2026</p>
+          <h1 class="hero-title">
+            <span class="title-mask"><span class="title-line title-line--solid">Делаем</span></span>
+            <span class="title-mask"><span class="title-line">сайты</span></span>
+            <span class="title-mask"><span class="title-line title-line--accent">с характером</span></span>
+          </h1>
+          <p class="hero-lead" data-reveal>
+            Визуально смелый landing page с плавным скроллом, насыщенной
+            анимацией и ощущением дорогого digital-опыта.
+          </p>
+
+          <div class="hero-actions" data-reveal>
+            <a class="button button--primary" href="#contact">Запустить проект</a>
+            <a class="button button--ghost" href="#showcase">Смотреть сцены</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card hero-card--main" data-parallax data-speed="0.14">
+            <p>Interactive art direction</p>
+            <span>Scroll-crafted motion / editorial rhythm / premium feel</span>
+          </div>
+          <div class="hero-card hero-card--small" data-parallax data-speed="0.22">
+            <span>Lenis</span>
+            <span>GSAP</span>
+            <span>ScrollTrigger</span>
+          </div>
+          <div class="hero-orbit hero-orbit--one"></div>
+          <div class="hero-orbit hero-orbit--two"></div>
+        </div>
+      </section>
+      
+
+      <section class="manifesto section section-grid">
+        <div class="section-intro">
+          <p class="eyebrow" data-reveal>Manifesto</p>
+          <h2 data-reveal>Скролл здесь работает как режиссура.</h2>
+        </div>
+
+        <div class="manifesto-copy">
+          <p data-reveal>
+            Каждый блок двигается с разной глубиной, секции держат паузу,
+            крупная типографика даёт ритм, а интерфейс ощущается собранным
+            как шоу-рил.
+          </p>
+          <p data-reveal>
+            Такой подход хорошо подходит для студий, fashion, digital-продуктов,
+            презентаций сервисов и личных брендов, которым нужен не шаблон,
+            а впечатление.
+          </p>
+        </div>
+      </section>
+
+      <section class="showcase section" id="showcase">
+        <div class="section-intro showcase-heading">
+          <p class="eyebrow" data-reveal>Selected scenes</p>
+          <h2 data-reveal>Горизонтальная витрина, чтобы страница не была предсказуемой.</h2>
+        </div>
+
+        <div class="showcase-sticky">
+          <div class="showcase-track">
+            <article class="showcase-card accent-apricot">
+              <span class="card-index">01</span>
+              <h3>Hero impact</h3>
+              <p>
+                Первый экран собирает внимание за счёт типографики, стеклянных
+                карточек и мягкого движения в глубине сцены.
+              </p>
+            </article>
+
+            <article class="showcase-card accent-sage">
+              <span class="card-index">02</span>
+              <h3>Editorial flow</h3>
+              <p>
+                Контент раскрывается партиями: часть текста появляется на
+                скролле, часть держится в кадре, чтобы создать pacing.
+              </p>
+            </article>
+
+            <article class="showcase-card accent-ink">
+              <span class="card-index">03</span>
+              <h3>Motion system</h3>
+              <p>
+                ScrollTrigger связывает секции в единый темп, а Lenis
+                добавляет мягкость и инерцию скроллу.
+              </p>
+            </article>
+
+            <article class="showcase-card accent-sand">
+              <span class="card-index">04</span>
+              <h3>Conversion close</h3>
+              <p>
+                В финале страница не осыпается, а собирается в уверенный CTA с
+                акцентом на ценность и следующий шаг.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="metrics section">
+        <div class="metric-panel" data-reveal>
+          <span class="metric-value">01</span>
+          <p>Одностраничная структура без визуального шума и лишних развилок.</p>
+        </div>
+        <div class="metric-panel" data-reveal>
+          <span class="metric-value">02</span>
+          <p>Плавный скролл и scrub-анимации, которые ощущаются нативно.</p>
+        </div>
+        <div class="metric-panel" data-reveal>
+          <span class="metric-value">03</span>
+          <p>Сильный art direction, чтобы сайт выглядел дороже обычного лендинга.</p>
+        </div>
+      </section>
+
+      <section class="services section" id="services">
+        <div class="section-intro">
+          <p class="eyebrow" data-reveal>Approach</p>
+          <h2 data-reveal>Собрано как digital-постановка, а не просто набор блоков.</h2>
+        </div>
+
+        <div class="service-list">
+          <article class="service-item" data-reveal>
+            <span>Direction</span>
+            <p>
+              Выразительный layout, крупный набор, работа с воздухом, контрастом
+              и ритмом секций.
+            </p>
+          </article>
+          <article class="service-item" data-reveal>
+            <span>Motion</span>
+            <p>
+              Reveal, parallax, pinning и scrub-движение, которые поддерживают
+              историю, а не отвлекают.
+            </p>
+          </article>
+          <article class="service-item" data-reveal>
+            <span>Flow</span>
+            <p>
+              Плавная прокрутка и переходы между блоками, благодаря которым
+              страница ощущается цельной.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <div class="contact-panel">
+          <p class="eyebrow" data-reveal>Ready to launch</p>
+          <h2 data-reveal> </h2>
+          <p class="contact-copy" data-reveal>
+            оформите заказ, и мы сделаем для вас сайт, который будет не просто
+            красивой визиткой, а настоящим digital-опытом с характером.
+          </p>
+          <a class="button button--primary" href="mailto:hello@nova-atelier.dev" data-reveal>
+            hello@nova-atelier.dev
+          </a>
+        </div>
+      </section>
+    </main>
+
+
+  </body>
+</html>

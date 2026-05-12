@@ -1,0 +1,49 @@
+*{ box-sizing: border-box;}
+html, body{ 
+    width: 100%;
+    overflow-x: hidden;
+    height: 100%;
+    background: bisque;
+}
+
+p{ font-family: Arial, Helvetica, sans-serif; }
+
+
+.menubar{
+position: relative;
+/*  */
+margin-left: 1vw;
+margin-right: 1vw;
+margin-top: 1vw;
+width: 98vw;
+height: 4vw;
+padding: 1.2vw;
+display: flex;
+justify-content: space-between;
+border-radius: 10vw;
+background: lavenderblush;
+}
+
+.menu{
+position: relative;
+/* display: flex; */
+display: none;
+}
+
+.list_container{
+position: relative;
+display: flex;
+}
+
+.li-list{
+position: relative;
+display: flex;
+gap: 1vw;
+margin: 0 1vw;
+}
+
+.li-list > li > a{
+    text-decoration: none;
+    font-size: 1.5vw;
+    color: cornflowerblue;
+}

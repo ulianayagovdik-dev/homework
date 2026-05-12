@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<style>
+body{
+    background: rgb(238, 46, 21);
+}
+</style>
+ <section class="menubar">
+      <!--  -->
+      <a href="./index.html"><img class="logo" src="img/cat.jpg" alt="logo"></a>
+      <div class="list_container">
+        <div class="menu">
+          <p>menu</p><p>↓</p>
+        </div>
+        <ul class="li-list">
+          <li><a href="./banana.html">Банан</a></li>
+          <li><a href="./avocado.html">Авокадо</a></li>
+          <li><a href="./strawberry.html">Клубника</a></li>
+          <li><a href="./orange.html">Апельсин</a></li>
+          <li><a href="./pitahaya.html">Питахайа</a></li>
+        </ul>
+      </div>
+      <div class="cart" id="cart-button"><img class="basket" src="./img/horse.jpg" alt="basket"> <span id="cart-count">0</span></div>
+    </section>
+
+    <section class="flexcard">
+    <div class="product-card" data-id="1" data-name="Футболка" data-price="1000" data-image="">
+      <h1>Футболка</h1>
+      <img class="t-shirt" src="./img/tshirt.jpg" alt="Футболка">
+      <p>Цена: 1000₽</p>
+      <button class="add-to-cart"> Добавить в Корзину </button>
+    </div>
+
+      <div class="product-card" data-id="2" data-name="Джинсы" data-price="1500" data-image="">
+      <h1>Джинсы</h1>
+      <img class="jeans" src="./img/jeams.jpg" alt="Джинсы">
+      <p>Цена: 1500₽</p>
+      <button class="add-to-cart"> Добавить в Корзину </button>
+    </div>
+
+        <div class="product-card" data-id="3" data-name="Футболка" data-price="1000" data-image="">
+      <h1>Футболка</h1>
+      <img class="t-shirt" src="./img/t-shirt2.jpg" alt="Футболка">
+      <p>Цена: 1000₽</p>
+      <button class="add-to-cart"> Добавить в Корзину </button>
+    </div>
+
+      <div class="product-card" data-id="4" data-name="Джинсы" data-price="1500" data-image="">
+      <h1>Джинсы</h1>
+      <img class="jeans" src="./img/jeans2.jpg" alt="Джинсы">
+      <p>Цена: 1500₽</p>
+      <button class="add-to-cart"> Добавить в Корзину </button>
+    </div>
+    </section>
+
+    <div id="cart-sidebar" class="cart-sidebar">
+      <p id="total-price"></p>
+      <button class="close-cart">Закрыть корзину</button>
+    </div>
+
+      <div id="cart-sidebar" class="cart-sidebar">
+    <button id="close-cart"> Закрыть корзину </button>
+    <div id="cart-items"></div>
+    <p id="total-price"></p>
+    <button id="zakaz"> Оформить заказ </button>
+  </div>
+    
+<script src="./js/strawberry.js" charset="utf-8" ></script> 
+</body>
+</html>

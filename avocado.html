@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+        <script src="./js/js.js" charset="utf-8"></script>
+</head>
+<body>
+<style>
+body{
+    background: rgb(15, 66, 6);
+}
+</style>
+ <section class="menubar">
+      <!--  -->
+      <a href="./index.html"><img class="logo" src="img/cat.jpg" alt="logo"></a>
+      <div class="list_container">
+        <div class="menu">
+          <p>menu</p><p>↓</p>
+        </div>
+        <ul class="li-list">
+          <li><a href="./banana.html">Банан</a></li>
+          <li><a href="./avocado.html">Авокадо</a></li>
+          <li><a href="./strawberry.html">Клубника</a></li>
+          <li><a href="./orange.html">Апельсин</a></li>
+          <li><a href="./pitahaya.html">Питахайа</a></li>
+        </ul>
+      </div>
+     <div class="cart" id="cart-button"><img class="basket" src="./img/horse.jpg" alt="basket"> <span id="cart-count">0</span></div>
+    </section>
+
+  <div id="cart-sidebar" class="cart-sidebar">
+    <button id="close-cart"> Закрыть корзину </button>
+    <div id="cart-items"></div>
+    <p id="total-price"></p>
+    <button id="zakaz"> Оформить заказ </button>
+  </div>
+
+
+<table><!-- таблица -->
+   <thead><!-- шапка таблицы -->
+       <tr> <!-- table row/ ряд в таблице в шапке -->
+          <th>Неделя</th><!-- ячейка -->
+          <th>Название</th>
+          <th>Дата</th>
+          <th>Предмет</th>
+          <th>Тип</th>
+          <th>+</th>
+       </tr>
+   </thead>
+   <tbody> <!-- тело таблицы -->
+        <tr>
+          <td>1</td>
+          <td>Верстаем форму</td>
+          <td>15 апреля 2026</td>
+          <td><span class="sp_red">Технология</span></td>
+          <td><span class="sp_green">Лекция</span></td>
+          <td></td>
+        </tr>
+   </tbody>
+</table>
+
+<form action="" class="new_row">
+  <input type="text" name="week" placeholder="Неделя">
+  <input type="text" name="name_of" placeholder="Название">
+  <input type="date" name="date" placeholder="Дата">
+  <select name="disk" id="">
+    <option value="Art">арт-практика</option>
+    <option value="tech">технология</option>
+    <option value="cp">креативное проектирование</option>
+  </select>
+  <select name="type" id="">
+    <option value="workshop">воркшоп</option>
+    <option value="lecture">лекция</option>
+    <option value="seminar">семинар</option>
+</select>
+<button class="avocado_button" type="button">+</button>
+  </form>  
+
+  <div id="cart-sidebar" class="cart-sidebar">
+    <button id="close-cart"> Закрыть корзину </button>
+    <div id="cart-items"></div>
+    <p id="total-price"></p>
+    <button id="zakaz"> Оформить заказ </button>
+</div>
+
+</body>
+</html>
